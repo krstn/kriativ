@@ -1,0 +1,36 @@
+body {
+    font-family:sans-serif;
+    font-size:12px;
+    font-weight:lighter;
+}
+form input, form select {
+    width:150px;
+    margin:0 5px 0 0;
+    border:1px solid black;
+    font:inherit;
+    padding:5px;
+    background:white;
+}
+form .title {
+    font-size:20px;
+}
+form .entry {
+    margin-top:15px;
+}
+form .first {
+    margin-top:20px;
+}
+form .entry .label {
+    font-size:16px;
+    margin-bottom:5px;
+}
+form .entry input.long {
+    width:310px;
+}
+form .entry input.button {
+    width:100px;
+    padding:10px;
+    color:white;
+    background-color:black;
+    cursor:pointer;
+}
