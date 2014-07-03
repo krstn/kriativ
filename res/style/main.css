@@ -1,0 +1,126 @@
+html {
+    height:100%;
+    min-height:100%;
+    background-color:white;
+}
+body {
+    min-width:800px;
+    height:100%;
+    min-height:100%;
+    margin:0 auto;
+    font-family:'Lato', sans-serif;
+    font-weight:300;
+    color:#1a1a1a;
+}
+a {
+    text-decoration:none;
+    color:#1a1a1a;
+    cursor:pointer;
+}
+.left {
+    float:left;
+}
+#header {
+    position:absolute;
+    display:table;
+    width:100%;
+    min-width:inherit;
+    height:40px;
+    z-index:1;
+    font-size:18px;
+    border-bottom:1px solid #1a1a1a;
+}
+#header .nav {
+    float:left;
+    height:inherit;
+    display:table;
+}
+#header .nav a {
+    display:table-cell;
+    vertical-align:middle;
+    padding:0 40px;
+}
+#header .nav .sel {
+    background-color:#fee517;
+}
+#header .nav .title {
+    background-color:#1a1a1a;
+    color:white;
+}
+#header .search {
+    float:right;
+    min-width:250px;
+    height:inherit;
+    font:inherit;
+    padding-left:5px;
+    margin:0 10px 0 0 ;
+    border:0;
+    border-left:1px solid #1a1a1a;
+    -webkit-appearance: none;
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+#content {
+    position:absolute;
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0;
+    min-width:inherit;
+    margin:40px 2px 0 0;
+    padding:30px 40px;
+    font-size:14px;
+    overflow-y:scroll;
+}
+::-webkit-scrollbar {
+    width:1px;
+    height:1px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#1a1a1a;
+}
+#content .sidebar {
+    float:left;
+    min-width:160px;
+}
+#content .sidebar .group {
+    margin-top:30px;
+}
+#content .sidebar .first {
+    margin-top:0px;
+}
+#content .sidebar .group .title {
+    text-transform:uppercase;
+    font-weight:400;
+}
+#content .sidebar .group ul {
+    list-style-type:none;
+    padding:0px;
+    margin:10px 0 0 0;
+    line-height:20px;
+    color:gray;
+}
+#content .sidebar .group .sel {
+    font-weight:400;
+    color:#1a1a1a;
+}
+#content .grid {
+    max-width:1000px;
+    float:left;
+}
+#content .grid .column {
+    max-width:500px;
+    float:left;
+}
+#content .grid .column .item {
+    float:left;
+    margin:0 10px 20px 0;
+}
+#content .grid .column .item .title {
+    font-size:18px;
+}
+#content .grid .column .item .tags {
+    font-size:11px;
+    color:gray;
+}
