@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Admin - Kriativ</title>
-        <link rel="stylesheet" href="../res/style/admin.css">
-    </head>
-    
-    <body>
-        
-        <form  method="post" action="add.php">
+<? include 'template/header.php'; ?>
+    <form  method="post" action="add.php">
             <div class="title">Add Item</div>
             
             <div class="entry first">
@@ -65,5 +57,4 @@
                 <input class="button" type="submit" name="submit" value="Add" />
             </div>
         </form>
-    </body>
-</html>
+<? include 'template/footer.php'; ?>

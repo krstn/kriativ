@@ -3,6 +3,23 @@ body {
     font-size:12px;
     font-weight:lighter;
 }
+a {
+    text-decoration:none;
+}
+.button {
+    width:100px;
+    padding:10px;
+    color:white;
+    background-color:black;
+    cursor:pointer;
+}
+#header {
+    padding:20px 0;
+    border-bottom:1px solid black;
+}
+#container {
+    padding:20px 0;
+}
 form input, form select {
     width:150px;
     margin:0 5px 0 0;
@@ -13,6 +30,10 @@ form input, form select {
 }
 form .title {
     font-size:20px;
+}
+form .error {
+    margin-top:5px;
+    color:red;
 }
 form .entry {
     margin-top:15px;
