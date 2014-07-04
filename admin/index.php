@@ -5,16 +5,19 @@ if (isset ($_POST["name"])){
     
     if((strlen($name)>0) && (strlen($pass)>0)){
         include_once 'utils/db_access.php';
-        
-        $query= "SELECT * FROM users WHERE username = '".$name."' and password = '".$pass."' and type = 'admin' ";
+        $query= "SELECT * FROM users WHERE username='".$name."' AND password='".$pass."' AND type='admin'";
 		$result=mysql_query($query);
 		$num=mysql_numrows($result);
 		
         if ($num==1){
-			$type = mysql_result($result,0, "type");
-			setcookie("type", $type);
-			setcookie("user", $name);
+			$now = date('Y-m-d H:i:s');
+            $query = "UPDATE users SET last_login='".$now."' WHERE username='".$name."'";
+            mysql_query($query,$con);
             
+            $type = mysql_result($result,0, "type");
+            setcookie("type", $type);
+			setcookie("user", $name);
+            header("Location: index.php");
             exit();
 		}
 		else{ 
