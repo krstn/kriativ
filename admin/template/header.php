@@ -15,7 +15,7 @@ if (isset ($_COOKIE["user"])){
         <?if($login) {?>
         <div id="header">
             <a class="button" href="add.php">Add Item</a>
-            <a class="button" href="#">Account</a>
+            <a class="button" href="account.php">Account</a>
             <a class="button" href="logout.php">Logout</a>
         </div>
         <?}?>
